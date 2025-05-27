@@ -19,11 +19,11 @@ exports.list = async(req,res)=>{
     try{
         // code
         const category = await prisma.category.findMany()
-        res.json(category)
+        res.json(category) ; 
         // res.send(category)
     }catch(err){
         console.log(err)
-        res.status(500).json({ message : "Server error" })
+        res.status(500).json({ message : "Server error55555" })
     }
 }
 exports.remove = async(req,res)=>{
