@@ -6,6 +6,7 @@ const { authCheck, adminCheck } = require('../middlewares/authCheck')
 // @ENDPOINT https://store-api-dusky.vercel.app/api/category
 router.post('/category', authCheck, adminCheck, create)
 router.get('/category', list)
+// 
 router.delete('/category/:id', authCheck, adminCheck, remove)
 
 
